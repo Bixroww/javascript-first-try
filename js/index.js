@@ -19,4 +19,11 @@ mouseEvent.addEventListener('mousemove', (event) => {
    vertical.innerHTML =  event.y;
    mouseEvent.style.left = event.x / window.innerWidth * 100 +"%";
 
+// condition
+
+   if (event.x > 500){
+      document.body.style.filter = "blur(3px)";
+   } else {
+      document.body.style.filter = "none"
+   }
 })
