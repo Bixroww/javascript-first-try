@@ -26,3 +26,38 @@ img{
     transform: translate(-50%);
     padding: 10px;
 }
+
+.themeContainer{
+    position: fixed;
+    top: 0;
+}
+.theme{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+#dark{
+    background: black;
+}
+#yellow{
+    background: yellow;
+}
+#blue{
+    background: blue;
+}
+
+.darkTheme{
+    background: black;
+    color: white;
+}
+
+.yellowTheme{
+    background: yellow;
+    color: white;
+}
+
+.blueTheme{
+    background: blue;
+    color: white;
+}
