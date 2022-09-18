@@ -27,3 +27,31 @@ mouseEvent.addEventListener('mousemove', (event) => {
       document.body.style.filter = "none"
    }
 })
+// nouvelle partie
+
+document.getElementById('input').addEventListener('input', (event)=>{
+   vertical.innerHTML = event.target.value
+})
+// color theme
+
+const theme = document.querySelectorAll('.theme');
+
+theme.forEach((item) => {
+   item.addEventListener('click', (event) => {
+      console.log(event.target.id);
+      document.body.classList.remove("darkTheme", "yellowTheme", "blueTheme");
+      switch (event.target.id) {
+         case "dark":
+            document.body.classList.add("darkTheme");
+            break;
+         case "yellow":
+            document.body.classList.add("yellowTheme");
+            break;
+         case "blue":
+            document.body.classList.add("blueTheme");
+            break;
+         default:
+            null;
+      }
+   })
+})
